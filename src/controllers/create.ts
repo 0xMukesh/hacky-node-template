@@ -1,5 +1,5 @@
-import { Request, Response } from "express";
-import { PrismaClient } from "@prisma/client";
+import { PrismaClient } from '@prisma/client';
+import { Request, Response } from 'express';
 
 const createUser = async (req: Request, res: Response) => {
   const { email, name } = req.body;
@@ -19,7 +19,7 @@ const createUser = async (req: Request, res: Response) => {
     });
   } catch (err) {
     return res.status(500).json({
-      message: "Internal server error",
+      message: 'Internal server error',
       error: err,
     });
   }

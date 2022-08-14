@@ -8,7 +8,7 @@
   "scripts": {
     "watch": "tsup --watch",
     "build": "tsup",
-    "generate": "prisma generate",
+    "generate": "npx prisma generate",
     "dev": "cross-env NODE_ENV=development nodemon dist/index.js",
     "start": "cross-env NODE_ENV=production pnpm build && pnpm generate && node dist/index.js"
   },

@@ -1,4 +1,2 @@
-import createUser from "./create";
-import deleteUser from "./delete";
-
-export { createUser, deleteUser };
+export { default as createUser } from "./create";
+export { default as deleteUser } from "./delete";
